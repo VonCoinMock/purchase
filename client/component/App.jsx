@@ -1,4 +1,11 @@
-import React from "react";
+import React from 'react';
+import AuctionInfo from './AuctionInfo/Frame.jsx';
+import GamerTag from './GamerTag/Frame.jsx';
+import ProductGallery from './ProductGallery/Frame.jsx';
+import Purchase from './Purchase/Frame.jsx';
+import Timer from './Timer/Frame.jsx';
+import WatchButton from './WatchButton/Frame.jsx';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -6,6 +13,15 @@ class App extends React.Component {
   }
 
   render() {
-    return (<div>Hello World</div>)
+    return (<div>
+      <AuctionInfo></AuctionInfo>
+      <GamerTag></GamerTag>
+      <ProductGallery></ProductGallery>
+      <Purchase></Purchase>
+      <Timer></Timer>
+      <WatchButton></WatchButton>
+      </div>)
   }
 }
+
+export default App;
