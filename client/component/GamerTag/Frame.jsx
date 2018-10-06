@@ -1,13 +1,92 @@
 import React from 'react';
 import styled from "styled-components";
 
+const TempOuterContainer = styled.div`
+    width: 1350px;
+    height: 880px;
+`;
+
+const TempInnerContainer = styled.div`
+    height: 27%;
+`;
+
+const Container = styled.div`
+  display: block;
+  width: 42.2%;
+  height: 90.1%;
+  margin: 5px;
+  border: 2px solid #22cac9;
+  background-color: #24205a;
+`;
+
+const GamerInfoContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+`;
+
+const AvatarFrame = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 30%;
+    height: 80%;
+    margin-right: 5%;
+`;
+
+const Avatar = styled.img`
+    max-width: 85%;
+    height: auto;
+    border-radius: 50%;
+`;
+
+const GamerTagFrame = styled.div`
+    justify-content: left;
+    align-items: center;
+    max-width: 60%;
+    height: 80%;
+`;
+
+const GamerTag = styled.h1`
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 12%;
+`;
+
+const Points = styled.h2`
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  height: auto;
+  font-size: 4em;
+  margin-top: 5%;
+  margin-bottom: 0px;
+`;
+
 class Frame extends React.Component {
     constructor(props) {
         super(props)
     }
 
     render() {
-        return (<div>GamerTag Frame</div>)
+        return <TempOuterContainer>
+            <TempInnerContainer>
+              <Container>
+                  <GamerInfoContainer>
+                        <AvatarFrame>
+                            <Avatar src="./src/avatar.png" />
+                        </AvatarFrame>
+                        <GamerTagFrame>
+                            <GamerTag>XBOX GAMERTAG</GamerTag>
+                            <Points>2300</Points>
+                        </GamerTagFrame>
+                  </GamerInfoContainer>
+              </Container>
+            </TempInnerContainer>
+          </TempOuterContainer>;
     }
 }
 
