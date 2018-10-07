@@ -1,22 +1,24 @@
 import React from 'react';
 import styled from "styled-components";
 
-const TempOuterContainer = styled.div`
-    width: 1350px;
-    height: 880px;
-`;
+// const TempOuterContainer = styled.div`
+//     width: 1350px;
+//     height: 880px;
+// `;
 
-const TempInnerContainer = styled.div`
-    height: 27%;
-`;
+// const TempInnerContainer = styled.div`
+//     height: 27%;
+// `;
 
 const Container = styled.div`
-  display: block;
-  width: 42.2%;
-  height: 90.1%;
-  margin: 5px;
-  border: 2px solid #22cac9;
-  background-color: #24205a;
+    display: block;
+    width: 42.2%;
+    height: 90.1%;
+    margin-top: 0;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    border: 1px solid #22cac9;
+    background-color: #24205a;
 `;
 
 const GamerInfoContainer = styled.div`
@@ -46,11 +48,12 @@ const GamerTagFrame = styled.div`
     justify-content: left;
     align-items: center;
     max-width: 60%;
-    height: 80%;
+    height: auto;
 `;
 
 const GamerTag = styled.h1`
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.65vw;
     color: white;
     height: auto;
     margin-bottom: 0px;
@@ -58,12 +61,12 @@ const GamerTag = styled.h1`
 `;
 
 const Points = styled.h2`
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  height: auto;
-  font-size: 4em;
-  margin-top: 5%;
-  margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    height: auto;
+    font-size: 4vw;
+    margin-top: .5vw;
+    margin-bottom: 0;
 `;
 
 class Frame extends React.Component {
@@ -72,9 +75,7 @@ class Frame extends React.Component {
     }
 
     render() {
-        return <TempOuterContainer>
-            <TempInnerContainer>
-              <Container>
+        return (<Container>
                   <GamerInfoContainer>
                         <AvatarFrame>
                             <Avatar src="./src/avatar.png" />
@@ -84,9 +85,7 @@ class Frame extends React.Component {
                             <Points>2300</Points>
                         </GamerTagFrame>
                   </GamerInfoContainer>
-              </Container>
-            </TempInnerContainer>
-          </TempOuterContainer>;
+              </Container>);
     }
 }
 
