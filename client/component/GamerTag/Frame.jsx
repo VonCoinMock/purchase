@@ -12,11 +12,9 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: block;
-    width: 42.2%;
-    height: 90.1%;
-    margin-top: 0;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
+    width: 45.2%;
+    height: 91.1%;
+    margin-bottom: 1vh;
     border: 1px solid #22cac9;
     background-color: #24205a;
 `;
@@ -53,7 +51,7 @@ const GamerTagFrame = styled.div`
 
 const GamerTag = styled.h1`
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.65vw;
+    font-size: 1.2em;
     color: white;
     height: auto;
     margin-bottom: 0px;

@@ -7,8 +7,8 @@ import ProductInfo from "./ProductInfo/Info.jsx";
 const ConCon = styled.div`
   position: absolute;
   margin-left: 4%;
-  height: 60%;
-  width: 65vw;
+  height: 58vh;
+  width: 69vw;
   background: #23114f;
   border: 1px solid grey;
 `
@@ -44,8 +44,8 @@ class Frame extends React.Component {
     }
     componentDidMount(){
       this.setState({
-        src: './resources/420-xbox-one-1.jpg',
-        images: ['./resources/420-xbox-one-1.jpg','./resources/pad.jpg','./resources/c3po.jpeg']
+        src: './src/purple.jpg',
+        images: ['./src/purple.jpg','./src/tron.jpg','./src/c3po.jpeg']
       })
     }
     changeImage(n){

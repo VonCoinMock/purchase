@@ -1,35 +1,33 @@
 import React from 'react';
 import styled from "styled-components";
-
+//remove all flex containers and reorganize divs. //flexbox is the root of all evil.
 const Container = styled.div `
-    width: 35vw;
-    height: 90.1%;
-    margin-top: 0;
-    margin-bottom: 1vw;
-    border: 1px solid #22cac9;
-    background-color: #22cac9;
+  position: absolute;
+  top: 0;
+  left: 51%;
+  width: 51%;
+  height: 21vh;
+  border: 1px solid #22cac9;
+  background-color: #22cac9;
 `;
 
 const ClockTimer = styled.div `
-display: flex;
-justify-content: center;
+  justify-content: center;
 `;
 
 const Clock = styled.div `
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.65vw;
+  font-size: 1.2em;
   color: white;
-  margin-bottom: 0px;
   margin-top: 5%
 `;
 
 const Time = styled.div `
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 5vw;
+  font-size: 2em;
   color: white;
   margin-left: 4vw;
-  margin-bottom: 0px;
-  margin-top: 5vw;
+  padding-top: 10vh;
 `;
 
 class Frame extends React.Component {
@@ -100,19 +98,18 @@ class Frame extends React.Component {
   }
 
   render() {
-    return (<div>
+    return (
       <Container>
         <ClockTimer>
           <Clock>
             <div>THIS PRODUCT</div>
-            <img src="https://www.iconsdb.com/icons/preview/white/clock-xxl.png" width="180" height="180"/>
           </Clock>
           <Time>
             <div>{this.state.minutes + ':' + this.state.seconds}</div>
           </Time>
         </ClockTimer>
       </Container>
-    </div>)
+    )
   }
 }
 

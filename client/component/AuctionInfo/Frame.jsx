@@ -9,33 +9,54 @@ import styled from 'styled-components';
 // `;
 
 const Container = styled.div`
+    overflow: hidden;
+    position: relative;
     border: 1px solid #22cac9;
     background-color: #24205a;
-    height: 18vw;
+    height: 45%;
     width: auto;
-    margin-top: .5vw;
-    margin-bottom: .5vw;
+    margin-top: 0.5vh;
 `;
 
 const Title = styled.h1`
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     width: 100%;
-    font-size: 1.75vw;
+    font-size: 1em;
     color: white;
     letter-spacing: -0.09em;
-    margin-top: 10%;
+    margin-top: 1vh;
 `;
 
 const Description  = styled.p`
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    font-size: 1.25vw;
-    max-height: 90%;
-    max-width: 80%;
+    font-size: 1em;
+    overflow-y: scroll;
     margin-right: 3%;
     margin-left: 10%;
-    line-height: 160%;
+    z-index: 100;
+    height: 58%;
+    &::-webkit-scrollbar {
+        width: 10px;
+        
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: none;
+        border-radius: 10px;
+    }
+     
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: none; 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: purple; 
+        border-radius: 10px;
+    }
 `;
 
 class Frame extends React.Component {
