@@ -10,7 +10,7 @@ import styled from "styled-components";
 //     height: 27%;
 // `;
 
-const Container = styled.div`
+const Container = styled.div `
     display: block;
     width: 45.2%;
     height: 91.1%;
@@ -19,37 +19,37 @@ const Container = styled.div`
     background-color: #24205a;
 `;
 
-const GamerInfoContainer = styled.div`
+const GamerInfoContainer = styled.div `
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     height: 100%;
 `;
 
-const AvatarFrame = styled.div`
+const AvatarFrame = styled.div `
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     max-width: 30%;
     height: 80%;
     margin-right: 5%;
 `;
 
-const Avatar = styled.img`
+const Avatar = styled.img `
     max-width: 85%;
     height: auto;
     border-radius: 50%;
 `;
 
-const GamerTagFrame = styled.div`
+const GamerTagFrame = styled.div `
     justify-content: left;
     align-items: center;
     max-width: 60%;
     height: auto;
 `;
 
-const GamerTag = styled.h1`
+const GamerTag = styled.h1 `
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2em;
     color: white;
@@ -58,7 +58,7 @@ const GamerTag = styled.h1`
     margin-top: 12%;
 `;
 
-const Points = styled.h2`
+const Points = styled.h2 `
     font-family: "Montserrat", sans-serif;
     color: white;
     height: auto;
@@ -68,23 +68,23 @@ const Points = styled.h2`
 `;
 
 class Frame extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+  constructor(props) {
+    super(props)
+  }
 
-    render() {
-        return (<Container>
-                  <GamerInfoContainer>
-                        <AvatarFrame>
-                            <Avatar src="./src/avatar.png" />
-                        </AvatarFrame>
-                        <GamerTagFrame>
-                            <GamerTag>XBOX GAMERTAG</GamerTag>
-                            <Points>2300</Points>
-                        </GamerTagFrame>
-                  </GamerInfoContainer>
-              </Container>);
-    }
+  render() {
+    return (<Container>
+      <GamerInfoContainer>
+        <AvatarFrame>
+          <Avatar src="./src/avatar.png"/>
+        </AvatarFrame>
+        <GamerTagFrame>
+          <GamerTag>XBOX GAMERTAG</GamerTag>
+          <Points>2300</Points>
+        </GamerTagFrame>
+      </GamerInfoContainer>
+    </Container>);
+  }
 }
 
 export default Frame;
