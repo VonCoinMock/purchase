@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const titlep = ({className, children, title}) => (<p className={className}>{title}</p>)
 const TitleP = styled(titlep)`
-  font-size: 2.5em;
+  font-size: 5vh;
   font-weight: bold;
 `
 
@@ -12,5 +12,8 @@ const titleDiv = ({className, title}) => (<div className={className}>
 </div>)
 
 const Title = styled(titleDiv)`
+  display: block;
+  margin: 0px;
+  padding: 0px;
 `
 export default Title;

@@ -5,8 +5,8 @@ const image = ({className, src, click}) => (
   <img className={className} src={src} onClick={()=>{click()}}/>
 )
 const Image = styled(image)`
-  height: ${props => props.main ? 'auto' : '40px'};
-  width: ${props => props.main ? '100%' : '40px'};
+  height: ${props => props.main ? 'auto' : '15vh'};
+  width: ${props => props.main ? '100%' : '7vw'};
   position: ${props => props.main ? 'absolute' : 'relative'};
   vertical-align: middle;
   text-align: center;

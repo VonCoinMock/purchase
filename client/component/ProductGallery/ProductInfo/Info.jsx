@@ -9,10 +9,10 @@ const container = ({className, children}) => (
 )
 
 const Container = styled(container)`
-  margin: 15px;
-  margin-bottom: 20px;
   color: white;
   font-family: Josefin Sans;
+  padding-left: 20px;
+  overflow: hidden;
 `
 
 class ProductInfo extends Component {

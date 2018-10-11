@@ -37,7 +37,6 @@ const Description  = styled.p`
     overflow-y: scroll;
     margin-right: 3%;
     margin-left: 10%;
-    z-index: 100;
     height: 58%;
     &::-webkit-scrollbar {
         width: 10px;

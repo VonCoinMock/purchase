@@ -4,9 +4,13 @@ import styled from "styled-components";
 const baseText = ({className, children}) => (<p className={className}>CURRENT BID</p>)
 
 const BaseText = styled(baseText)`
+  background-color: #24205a;
   font-size: 1.5em;
   position: absolute;
-  bottom: 10px;
+  bottom: -70px;
+  height: 100px;
+  width: 500px;
+  padding-top: 21px
 `
 const symbol = ({className}) => (<p className={className}>&#9661;</p>)
 const Symbol = styled(symbol)`
