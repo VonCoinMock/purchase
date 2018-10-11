@@ -5,7 +5,7 @@ const Container = styled.div `
   position: absolute;
   top: 0;
   left: 51%;
-  width: 51%;
+  width: 51.5%;
   height: 21vh;
   border: 1px solid #22cac9;
   background-color: #22cac9;
@@ -20,8 +20,9 @@ vertical-allign middle;
 `;
 
 const ThisProduct = styled.div `
-  font-size: 1.2em;
+  font-size: .77em;
   text-align: center;
+  margin-bottom: 1vh;
 `;
 
 const Clock = styled.div `
@@ -39,7 +40,7 @@ const Time = styled.div `
   font-size: 7vw;
   font-weight: bold;
   color: white;
-  padding-top: 7vh;
+  padding-top: 5vh;
   padding-right: 7vw;
   max-width: 10vw;
 `;
@@ -122,7 +123,6 @@ class Frame extends React.Component {
       <ClockTimer>
         <Clock>
           <ThisProduct>THIS PRODUCT</ThisProduct>
-          <br/>
           <ClockImg src="https://www.iconsdb.com/icons/preview/white/clock-xxl.png"/>
         </Clock>
         <Time>
