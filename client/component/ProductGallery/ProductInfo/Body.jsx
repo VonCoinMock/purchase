@@ -6,7 +6,7 @@ const text = ({className, children, body}) => (
   <p className={className}>{body}</p>
 )
 const Text = styled(text)`
-  font-size: 14px;
+  font-size: 1.2em;
 `
 
 const bodyDiv = ({className, body}) => (

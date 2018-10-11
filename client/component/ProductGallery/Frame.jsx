@@ -10,15 +10,15 @@ const ConCon = styled.div`
   height: 58vh;
   width: 69vw;
   background: #23114f;
-  border: 1px solid grey;
-`
+  border: 1px solid #22cac9;
+`;
 const parent = ({className, children}) => (
   <div className={className}>
     {children}
   </div>
 )
 const LContainer = styled(parent)`
-  width: 45%;
+  width: 46%;
   height: 100%;
   position: absolute;
   left: 0px;
@@ -26,12 +26,13 @@ const LContainer = styled(parent)`
   overflow: hidden;
 `
 const RContainer = styled(parent)`
-  width: 55%;
+  width: 54%;
   height: 100%;
   position: absolute;
   right: 0px;
   overflow: hidden;
-`
+  background-color: #24205a;
+`;
 
 class Frame extends React.Component {
     constructor(props) {
@@ -45,7 +46,7 @@ class Frame extends React.Component {
     componentDidMount(){
       this.setState({
         src: './src/purple.jpg',
-        images: ['./src/purple.jpg','./src/tron.jpg','./src/c3po.jpeg']
+        images: ['./src/purple.jpg','./src/tron.jpg','./src/c3po.jpg']
       })
     }
     changeImage(n){

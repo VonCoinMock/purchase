@@ -13,7 +13,7 @@ const Container = styled.div`
     background-color: #24205a;
     height: 35%;
     width: 99.2%;
-    margin-bottom: .5vw;
+    margin-bottom: 1.89vh;
 `;
 
 const TopResult = styled.div`

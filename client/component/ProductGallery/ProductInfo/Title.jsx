@@ -5,7 +5,8 @@ const titlep = ({className, children, title}) => (
   <p className={className}>{title}</p>
 )
 const TitleP = styled(titlep)`
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 `
 
 const titleDiv = ({className, title}) => (

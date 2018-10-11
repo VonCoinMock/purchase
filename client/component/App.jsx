@@ -37,13 +37,14 @@ const Logo = styled.h1`
 const Clock = styled.div`
   font-family: "Nunito+Sans", sans-serif;
   font-weight: 300;
-  font-size: 1vh;
+  font-size: 2vh;
   position: absolute;
   max-height: 100%;
   height: auto;
   text-align: center;
-  padding-top: 2.5vh;
+  padding-top: 5vh;
   color: white;
+  right: 4.25vw;
 `;
 
 const Content = styled.div`
@@ -54,7 +55,6 @@ const Content = styled.div`
 
 const MainView = styled.div`
   position: absolute;
-  height: inherit
   width: 70%;
 `;
 
@@ -63,6 +63,7 @@ const MainViewTop = styled.div`
   height: 23vh;
   width: 100%;
   margin-left: 2.9vw
+  margin-bottom: 1vh;
 `;
 
 const MainViewBottom = styled.div`

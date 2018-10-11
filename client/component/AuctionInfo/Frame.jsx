@@ -15,23 +15,25 @@ const Container = styled.div`
     background-color: #24205a;
     height: 45%;
     width: auto;
-    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-top: 0;
 `;
 
 const Title = styled.h1`
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     width: 100%;
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
     letter-spacing: -0.09em;
     margin-top: 1vh;
+    padding-top: 3vh;
 `;
 
 const Description  = styled.p`
     font-family: 'Josefin Sans', sans-serif;
     color: white;
-    font-size: 1em;
+    font-size: 1.3em;
     overflow-y: scroll;
     margin-right: 3%;
     margin-left: 10%;
